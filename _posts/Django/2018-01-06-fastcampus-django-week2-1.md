@@ -1,6 +1,6 @@
 ---
 layout: post
-title: django 00. 개념
+title: [패캠] 2주차. 개념
 category: Django
 tags: [python, 파이썬, Django]
 comments: true

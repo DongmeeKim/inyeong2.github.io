@@ -1,14 +1,13 @@
 ---
 layout: post
-title: [패캠_Django] 2주차.(실습) 장고 설치 및 프로젝트생성 ~ 템플릿작성
+title: [패캠] 2주차. 장고 설치, 프로젝트 생성~템플릿 작성
 category: Django
+tags: [python, 파이썬, Django]
 comments: true
-
 ---
 
 패스트캠퍼스_ Python & Django를 활용한 웹 서비스 개발 CAMP 실습내용 정리
 (배운내용을 좀 더 확실하게 복습하는 겸 정리해놓으면 좋을 것 같다!!)
-
 
 
 ##### 장고 설치 및 프로젝트 생성
