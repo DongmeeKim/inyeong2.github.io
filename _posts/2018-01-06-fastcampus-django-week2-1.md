@@ -1,6 +1,8 @@
 ---
 layout: post
 title: [패캠_Django] 2주차.(이론) MTV, MVC, Django
+category: Django
+comments: true
 ---
 
 패스트캠퍼스_ Python & Django를 활용한 웹 서비스 개발 CAMP 내용 정리
