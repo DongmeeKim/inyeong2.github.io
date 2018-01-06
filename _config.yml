@@ -27,14 +27,13 @@ version: 1.0.0
 author:
   name: Fyddl
   description: 백엔드 개발자를 꿈꾸는 20대
-  gravatar: 3c2986ad7ac1f2230ea3596f44563328 # md5 hash of your email address
   contact:
     # linkedin:  https://www.linkedin.com/in/lizhihao
     github:    https://github.com/inyeong2
     # facebook:  <hide>
     # twitter:   https://twitter.com/Li_Zhihao
     # weibo:     http://weibo.com/41173780
-    email:     http://www.google.com/fyd1103@gmail.com
+    # email:     http://gmm/fyd1103@gmail.com
 
 # Navigation (2nd level links supported)
 nav:
@@ -47,7 +46,7 @@ nav:
     - { 알고리즘: '/blog/categories/#알고리즘' }
     - { MySQL: '/blog/categories/#mysql' }
     - { 기타: '/blog/categories/#etc' }
- +   # - { Categories: '/blog/categories/' }
+     # - { Categories: '/blog/categories/' }
      # - { Tags: '/blog/tags/' }
   About:
     - '/about/'
