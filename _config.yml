@@ -3,7 +3,7 @@ title: 룡이의 STUDY Blog
 tagline: '룡이의 STUDY Blog'
 description: 'A Jekyll theme adapted from <a href="http://lanyon.getpoole.com/" target="_blank">Lanyon</a>. Made by <a href="http://codinfox.github.io" target="_blank">@codinfox</a>.'
 baseurl: ""
-url: http://inyeong2.github.io
+url: https://inyeong2.github.io
 logo: '/public/logo.png'
 
 # Site configurations
@@ -40,13 +40,13 @@ nav:
     - '/blog/'
   Categories:
     - '/'
-    - { Python: '/blog/categories/#python' }
-    - { Django: '/blog/categories/#django' }
-    - { 알고리즘: '/blog/categories/#알고리즘' }
-    - { MySQL: '/blog/categories/#mysql' }
-    - { 기타: '/blog/categories/#etc' }
-     # - { Categories: '/blog/categories/' }
-     # - { Tags: '/blog/tags/' }
+    - { Categories: '/blog/categories/' }
+    - { Tags: '/blog/tags/' }
+   # - { Python: '/blog/categories/#python' }
+   # - { Django: '/blog/categories/#django' }
+   # - { 알고리즘: '/blog/categories/#알고리즘' }
+   # - { MySQL: '/blog/categories/#mysql' }
+   # - { 기타: '/blog/categories/#etc' }
   About:
     - '/about/'
 

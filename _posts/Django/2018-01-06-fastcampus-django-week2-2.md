@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "패스트캠퍼스 2주차. 개념"
+title: "패스트캠퍼스 2주차. 장고 프로젝트1"
 categories: Django
 tags: [Django, python, 장고]
 comments: true
@@ -17,21 +17,21 @@ comments: true
 > pip install django==1.11
 > django-admin startproject [프로젝트명]
 ```
-(==django-admin== 은 스크립트로 디렉토리와 파일들을 생성함)
+(**django-admin** 은 스크립트로 디렉토리와 파일들을 생성함)
 위의 명령을 입력해주면 지정해준 위치에서 프로젝트명을 가진 디렉토리에 가면
 (디렉토리 구조 확인 cmd 명령: >tree [디렉토리명] /F)
 ![django1](https://user-images.githubusercontent.com/34964514/34638592-1d48809e-f312-11e7-8a1d-88c1ea9434c5.jpg)
 위와 같이 manage.py와 디렉토리안에 상위 디렉토리와 같은 네임으로 하나의 디렉토리가 더 생겼고 그 안에 4개의 파이썬파일 생성되어있음.
 
-==manage.py== : 우리가 장고와 커뮤니케이션(상호작용)할 수 있는 것 (Django 프로젝트와 다양한 방법으로 상호작용하는 커맨드라인의 유틸리티)
+**manage.py** : 우리가 장고와 커뮤니케이션(상호작용)할 수 있는 것 (Django 프로젝트와 다양한 방법으로 상호작용하는 커맨드라인의 유틸리티)
 
-==_ _init_ _.py== : 생성 시 자동으로 생성되는 파일
+**_ _init_ _.py** : 생성 시 자동으로 생성되는 파일
 
-==settings.py ==: 현재 프로젝트의 여러가지 환경설정을 함
+**settings.py**: 현재 프로젝트의 여러가지 환경설정을 함
 
-==urls.py== : 현재 프로젝트의 url 선언을 저장함 (Django로 작성된 사이트의 '목차'라고 생각)
+**urls.py** : 현재 프로젝트의 url 선언을 저장함 (Django로 작성된 사이트의 '목차'라고 생각)
 
-==wsgi.py== : 현재 프로젝트를 서비스 하기 위해 웹과 커뮤니케이션할 수 있는 웹 서버의 진입점(세관같은 역할)
+**wsgi.py** : 현재 프로젝트를 서비스 하기 위해 웹과 커뮤니케이션할 수 있는 웹 서버의 진입점(세관같은 역할)
 
 ##### APP 추가
 프로젝트를 생성해줬으니 이제 우리가 추가하고 싶은 기능을 가진 app을 생성 (Pycharm 터미널 이용)
@@ -42,7 +42,7 @@ comments: true
 ![django2](https://user-images.githubusercontent.com/34964514/34638741-55ffb45e-f315-11e7-8ae1-07fc701079a0.JPG)
 위와 같이 firstapp디렉토리 안에 6개의 파일과 migrations 디렉토리가 생성됨(_ _init_ _.py는 자동으로 생성되는것!)
 
-앱 생성 후, ==프로젝트 폴더/settings.py  INSTALLED_APPS== 에 앱을 추가해서 장고에게 이 앱을 사용하겠다고 알려야 됨(뒤에 콤마(,)찍는 것 생활화하기!!)
+앱 생성 후, **프로젝트 폴더/settings.py  INSTALLED_APPS** 에 앱을 추가해서 장고에게 이 앱을 사용하겠다고 알려야 됨(뒤에 콤마(,)찍는 것 생활화하기!!)
 ```
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -58,7 +58,7 @@ INSTALLED_APPS = [
 ##### 데이터베이스(DB) 설정
 (모델은 다음 시간에 생성)
 사이트 내 데이터를 저장하기 위해서 이미 장고내에 설치되어있는 sqlite3을 사용할 것
-==프로젝트 폴더/settings.py DATABASES==에서 확인가능
+**프로젝트 폴더/settings.py DATABASES**에서 확인가능
 ```
 DATABASES = {
     'default': {
@@ -71,12 +71,12 @@ DATABASES = {
 ```
 >python manage.py migrate 
 ```
-위의 코드 실행하면 ==db.sqlite3== 파일이 최상위 디렉토리안에 생성된 것을 확인할 수 있음.
+위의 코드 실행하면 **db.sqlite3** 파일이 최상위 디렉토리안에 생성된 것을 확인할 수 있음.
 
 
 ##### VIEW(뷰) 코딩
 VIEW는 페이지 조작할 때 수정,추가,삭제등의 기능을 설계하기위해서 필요
-웹페이지에 새로운 기능을 추가하기 위해서 ==firstapp/views.py== 파일을 오픈해서 작성
+웹페이지에 새로운 기능을 추가하기 위해서 **firstapp/views.py** 파일을 오픈해서 작성
 ```
 from django.shortcuts import render
 from django.views.generic.base import TemplateView
@@ -124,7 +124,7 @@ User에게 보여줄 내용의 노출을 위해 화면 구성
 ```
 * 파일or디렉토리 새로 추가하는경우: server를 다시 껐다 켜야함(runserver 재실행)
 
-==settings.py TEMPLATES== 에서 'DIRS'에 아래와 같이 추가
+**settings.py TEMPLATES** 에서 'DIRS'에 아래와 같이 추가
 ```
 'DIRS': [os.path.join(BASE_DIR,'templates')],
 ```
@@ -140,6 +140,7 @@ User에게 보여줄 내용의 노출을 위해 화면 구성
 * 꼭꼭 설치부터 끝까지 다시한번 해보기
 * 퇴근 후 피곤한데도 눈이 말똥말똥!! 재밌다! 제발 2시간내내 초집중상태로 있을  수 있길..!
 * 계속 내용 수정 및 추가하기
+
 - - -
 ## REFERENCE
 * [장고걸스 튜토리얼(Django Girls Tutorial)](https://tutorial.djangogirls.org/ko)
