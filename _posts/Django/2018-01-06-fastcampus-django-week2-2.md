@@ -1,8 +1,8 @@
 ---
 layout: post
-title: [패캠] 2주차. 장고 설치, 프로젝트 생성~템플릿 작성
-category: Django
-tags: [python, 파이썬, Django]
+title: "패스트캠퍼스 2주차. 개념"
+categories: Django
+tags: [Django, python, 장고]
 comments: true
 ---
 
