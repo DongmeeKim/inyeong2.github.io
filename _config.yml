@@ -25,7 +25,7 @@ version: 1.0.0
 # About/contact
 author:
   name: Fyddl
-  description: 백엔드 개발자를 꿈꾸는 20대
+  description: 백엔드 공부 기록용
   contact:
     # linkedin:  https://www.linkedin.com/in/lizhihao
     github:    https://github.com/inyeong2
@@ -57,5 +57,5 @@ category_page: '/blog/categories/'
 # Puglins
 mathjax: true # whether support mathjax
 google_analytics_token: 'UA-112027775-1' # leave blank if you don't want google analytics
-disqus_short_name: 'inyeong2-github-io' # leave blank if you don't want disqus
+disqus_short_name: 'inyeong2blog' # leave blank if you don't want disqus
 
